@@ -35,14 +35,14 @@ Equipe_LG = []
 for i in range(nbre_mechant):
     Equipe_LG.append(listeJ.index("LG{}".format(i+1))+1)
 Equipe_LG.sort()
-print(Equipe_LG)
+print('Les LG sont :',Equipe_LG)
 
 vilagois = nbre_joueur - len(role_fix)-nbre_mechant
 Equipe_Villagois = []
 for i in range(vilagois):
     Equipe_Villagois.append(listeJ.index("vilagois{}".format(i+1))+1)
 Equipe_Villagois.sort()
-print(Equipe_Villagois)
+print('Les villagois sont :',Equipe_Villagois)
 
 
 print("Debut de la 1er nuit, le village s'endors.")
