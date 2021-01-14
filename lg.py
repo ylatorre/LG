@@ -30,8 +30,8 @@ joueur()
 
 wait = input("Press Enter to continue.")
 clear()
-i = 0
 
+i = 0
 for i in range(nbre_joueur):
     print("ton role est : {} et ton numero est le {}".format(listeJ[i], i+1))
     wait = input("Press Enter to continue.")
@@ -52,14 +52,26 @@ for i in range(villageois):
 Equipe_Villagois.sort()
 print('Les villagois sont :', Equipe_Villagois)
 
-
+print(listeJ)
 print("Debut de la 1er nuit, le village s'endors.")
 
 
-amoureux = input("Cupidon designe 2 joueurs :").split()
-amoureux.append(listeJ.index('Cupidon')+1)
-while len(amoureux) != 3:
-    amoureux = input("Erreur Cupidon designe 2 joueurs :").split()
-    amoureux.append(listeJ.index('Cupidon')+1)
-print("Les amoureux sont :", amoureux)
+print(listeJ.index("Cupidon")+1)
+
+
+def couple():
+    couple1 = int(input("Couple numero 1 : "))
+    couple2 = int(input("Couple numero 2 : "))
+    if couple1 == int(listeJ.index("Cupidon")+1) or couple2 == int(listeJ.index("Cupidon")+1) or couple1 == couple2:
+        print("erreur ")
+        couple()
+    else:
+        print(listeJ)
+        print("Les amoureux sont : {} et {}".format(
+            listeJ[(couple1)-1], listeJ[(couple2)-1]))
+        return couple1, couple2
+
+
+couple()
+
 print('Fin de la 1er nuit')
