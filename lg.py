@@ -27,6 +27,7 @@ def joueur():
 
 
 joueur()
+clear()
 i = 0
 for i in range(nbre_joueur):
     print("ton role est : {}".format(listeJ[i]))
