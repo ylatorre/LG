@@ -30,6 +30,6 @@ joueur()
 clear()
 i = 0
 for i in range(nbre_joueur):
-    print("ton role est : {}".format(listeJ[i]))
+    print("ton role est : {} et ton numero est le {}".format(listeJ[i], i+1))
     wait = input("Press Enter to continue.")
     clear()
