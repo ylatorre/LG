@@ -36,3 +36,4 @@ for i in range(nbre_joueur):
     clear()
     
 print(listeJ)
+print("Debut de la 1er nuit, le village s'endors.")
