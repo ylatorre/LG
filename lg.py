@@ -49,6 +49,6 @@ print("Debut de la 1er nuit, le village s'endors.")
 
 amoureux = input("Cupidon designe 2 joueurs :").split()
 Equipe_Cupidon = amoureux.append(listeJ.index('Cupidon')+1)
-print(amoureux)
+print("Les amoureux sont :",amoureux)
 print('Fin de la 1er nuit')
 print('Debut de la 1er journee')
