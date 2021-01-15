@@ -75,5 +75,6 @@ def couple():
 
 
 couple()
+
 print(listeJ)
 print('Fin de la 1er nuit')
