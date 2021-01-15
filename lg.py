@@ -66,12 +66,14 @@ def couple():
         print("erreur ")
         couple()
     else:
-        print(listeJ)
         print("Les amoureux sont : {} et {}".format(
             listeJ[(couple1)-1], listeJ[(couple2)-1]))
+        equipe_cupidon = [listeJ.index('Cupidon')+1, (couple1), (couple2)]
+        equipe_cupidon.sort()
+        print(equipe_cupidon)
         return couple1, couple2
 
 
 couple()
-
+print(listeJ)
 print('Fin de la 1er nuit')
